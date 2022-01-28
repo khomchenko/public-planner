@@ -1,7 +1,7 @@
 <template>
     <div class="navbar">
         <nav>
-            <router-link :to="{ name: 'Home' }">
+            <router-link :to="{ name: 'Home' }" class="logo">
                 <img src="@/assets/planner-logo.svg" alt="Logo" />
                 <span>Public Planner</span>
             </router-link>
@@ -60,17 +60,16 @@ nav {
     width: 100%;
     margin: 0 auto;
 }
-nav .router-link-active {
-    width: 200px;
-}
-nav .router-link-active span {
-    font-size: 18px;
-    font-weight: 700;
-}
 nav a {
     display: flex;
     align-items: center;
-    width: 100%;
+}
+nav .logo {
+    width: 200px;
+}
+nav a span {
+    font-size: 18px;
+    font-weight: 700;
 }
 nav .links {
     display: flex;
