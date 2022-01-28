@@ -60,6 +60,13 @@ nav {
     width: 100%;
     margin: 0 auto;
 }
+nav .router-link-active {
+    width: 200px;
+}
+nav .router-link-active span {
+    font-size: 18px;
+    font-weight: 700;
+}
 nav a {
     display: flex;
     align-items: center;
